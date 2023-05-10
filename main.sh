@@ -21,7 +21,8 @@ if [ -z "$quote" ]; then
         read -p "Введите объяснение для новой цитаты: " new_explanation
         echo "${book_title}: \"${new_quote}\" - Глава ${new_chapter}, страница ${new_page} [id:${new_id}]" >> citates.txt
         echo "id:${new_id} ${new_explanation}" >> expl.txt
-        echo "Новая цитата с объяснением добавлена в базу данных"
+        echo ""
+        echo "Новая цитата с объяснением успешна добавлена в базу данных"
         exit 0
     else
         exit 1
