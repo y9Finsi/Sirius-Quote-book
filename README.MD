@@ -1,4 +1,4 @@
-# Введение в специальность
+# ЦИТАТНИК СИРИУСА
 ![main_workflow](https://github.com/EgorikA4/IE/actions/workflows/pylint.yml/badge.svg)
 
 <h3 align="center">
