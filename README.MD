@@ -8,7 +8,9 @@
 ### Описание скрипта:
 с помощью этого скрипта можно искать цитаты с обьяснениями из произведений идущих в программе обучения литературы IT-колледжа сириус. Присутствует возможность добавлять новые произведения и цитаты к ним. Скрипт ищет цитаты в файле citates.txt и сопостовляет их с обьяснениями цитат в expl.txt
 
-![llll](https://github.com/y9Finsi/Sirius-Quote-book/assets/98806102/e83c2494-4131-40ec-80c7-66b0c5b4ba62)
+![images](https://github.com/y9Finsi/Sirius-Quote-book/assets/98806102/e83c2494-4131-40ec-80c7-66b0c5b4ba62)
+![image](https://github.com/y9Finsi/Sirius-Quote-book/assets/98806102/fb04850c-66dc-400d-aecd-b46d40e225e4)
+
 
 
 ## Установка и запуск
