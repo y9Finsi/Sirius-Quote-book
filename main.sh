@@ -12,7 +12,7 @@ if [ -z "$quote" ]; then
     read -p "Хотите добавить цитату для этого произведения? (y/n): " choice
     echo ""
 
-# Если нет, добавляем цитату
+    # Если нет, добавляем цитату
     if [ "$choice" == "y" ]; then
         read -p "Введите цитату для произведения '$book_title': " new_quote
         last_id=$(grep -oP '\[id:\K\d+' citates.txt | tail -1)
@@ -30,6 +30,7 @@ if [ -z "$quote" ]; then
     fi
 fi
 
+# Рандомно получаем цитату с помощью shuf
 quote=$(echo "$quote" | shuf -n 1)
 
 # Извлекаем id цитаты
