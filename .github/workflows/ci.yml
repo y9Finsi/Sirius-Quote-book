@@ -1,22 +1,25 @@
 name: CI
-
 on:
   push:
-    branches: [master]
-
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
 jobs:
-  test:
+  build:
     runs-on: ubuntu-latest
     steps:
-    - name: Checkout master branch
+    - name: Checkout repo
       uses: actions/checkout@v2
-      with:
-        ref: refs/heads/master
-    - name: Install Dependencies
-      run: npm ci
-    - name: Run Unit Tests
+    - name: тест создания цитаты
       run: |
+        chmod +x ./testcreate.sh
         ./testcreate.sh
+    - name: тест получения цитаты
+      run: |
+        chmod +x ./testcyt.sh
         ./testcyt.sh
+    - name: тест получения обьяснения
+      run: |
+        chmod +x ./testexp.sh
         ./testexp.sh
         
