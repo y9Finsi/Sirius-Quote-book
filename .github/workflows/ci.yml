@@ -1,0 +1,22 @@
+name: CI
+
+on:
+  push:
+    branches: [master]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout master branch
+      uses: actions/checkout@v2
+      with:
+        ref: refs/heads/master
+    - name: Install Dependencies
+      run: npm ci
+    - name: Run Unit Tests
+      run: |
+        ./testcreate.sh
+        ./testcyt.sh
+        ./testexp.sh
+        
